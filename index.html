@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Grade Calculator</title>
+    <h>SophieHub</h>
+</head>
+
+<body onload = "onLoad()">
+<!--<body>-->
+<!--maybe change type back to text, or should I have a numerical value instead-->
+<input type="number" id="desiredGrade" value = "90" placeholder = "Desired Final Grade">
+<input type="number" id="finalWeight" value = "15" placeholder = "Final Weight (%)">
+
+
+<table border=”1” cellspacing=”2” cellpadding=”5”>
+    <tr>
+        <th>Category</th>
+        <th>Current Grades (%)</th>
+        <th>Weight (%)</th>
+        <th>Grade</th>
+    </tr>
+    <tr id="hwRow">
+        <td>Homework</td>
+        <!--should I make this have a value??- "Create dummy data that persists in your fields even on a page refresh"-->
+        <!--instructions to include all grades in subject-->
+
+        <!--<td><input type="text" id="homework" placeholder="Homework Grade"><br></td>-->
+        <td><input type="text" id="homework" value = "90, 100, 90, 100" placeholder="Homework Grade"><br></td>
+        <td><input type="text" id="homeworkWeight" value = 20 placeholder = "Homework Weight"></td>
+        <td><div id="hwGrade"></div></td>
+    </tr>
+    <tr id = "quizRow">
+        <td>Quizzes</td>
+        <!--&lt;!&ndash;<td><input type="number" id="quizzes" value="90" size="25"></td>&ndash;&gt;THIS IS WHAT IT USED TO LOOK LIKE-->
+        <td><input type="text" id="quizzes" value = "95, 95, 90, 90, 100" placeholder = "Quiz Grade"></td>
+        <td><input type="text" id="quizWeight" value = "20" placeholder = "Quiz Weight"></td>
+        <td><div id="quizGrade"></div></td>
+    </tr>
+    <tr id = "testRow">
+        <td>Tests</td>
+        <td><input type="text" id="tests" value = "100, 90, 100" placeholder = "Test Grade"></td>
+        <td><input type="text" id="testWeight" value = "30" placeholder = "Test Weight"></td>
+        <td><div id="testGrade"></div></td>
+    </tr>
+    <tr id = "midtermRow">
+        <td>Midterm</td>
+        <td><input type="text" id="midterm" value = "95" placeholder = "Midterm Grade"></td>
+        <td><input type="text" id="midtermWeight" value = "15" placeholder = "Midterm Weight"></td>
+
+        <td><div id="midtermGrade"></div></td>
+    </tr>
+
+</table>
+
+<div id = "instructions"></div>
+<button id="calculateButton" onclick="calculateCurrentGrade()">Calculate what percentage I need on the final!</button>
+</body>
+
+<div id = "overHundred"></div>
+<div id = "notNumber"></div>
+
+<div id="weightedGrade"></div>
+
+<div id="finalScoreNeeded"></div>
+
+
+</html>

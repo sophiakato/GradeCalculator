@@ -1,0 +1,147 @@
+/* style all elements in the <body> */
+body {
+    font-family: "Book Antiqua";
+    vertical-align: top;
+    background-image:url(img/clouds.gif);
+
+}
+
+/* style all the buttons in a page */
+#weightedGrade{
+    right: 58%;
+    position: absolute;
+    top: 70%;
+    width: 200px;
+    height: 70px;
+    border: 3px solid darkslategray;
+    padding: 10px;
+    text-align: center;
+    color: darkslategray;
+    background-color: #9EACED;
+}
+
+#finalScoreNeeded{
+    right: 32%;
+    position: absolute;
+    top: 70%;
+    width: 200px;
+    height: 70px;
+    border: 3px solid darkslategray;
+    padding: 10px;
+    text-align: center;
+    color: darkslategray;
+    background-color: #9EACED;
+}
+
+/* style the element with the id “myId” */
+#finalWeight{
+    position: absolute;
+    right: 47.5%;
+    top: 30%;
+}
+
+/*style all elements with the class “fontLarge” */
+.fontLarge{
+    font-size: 14px;
+}
+
+/* style all p elements with the class “center” */
+p.center {
+    text-align: center;
+    color: red;
+}
+
+/* style all h1, h2 and p elements */
+h1, h2, p {
+    text-align: right;
+    text-weight: bold;
+}
+
+table{
+    position: absolute;
+    top: 35%;
+    right: 35.5%;
+    background-color: #9EACED;
+}
+
+h{
+    position: absolute;
+    right: 40%;
+    width: 300px;
+    border: 3px solid blue;
+    padding: 10px;
+    text-align: center;
+    color:mediumblue;
+    font-weight: bold;
+}
+
+#desiredGrade{
+    position: absolute;
+    right: 47.5%;
+    top: 25%;
+
+}
+
+.button{
+    /*background-color: #4CAF50; !* Green *!*/
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#calculateButton {
+    position: absolute;
+    font-family: "Book Antiqua";
+    font-size: 12px;
+    right: 49.5%;
+    top: 57%;
+    height: 60px;
+    width: 100px;
+    background-color: white;
+    color: black;
+    border: 2px solid blue;
+}
+
+#calculateButton:hover {
+    background-color: blue;
+    color: white;
+}
+
+#overHundred{
+    position: absolute;
+    background-color: peachpuff;
+    color: rebeccapurple;
+    padding: 16px 32px;
+    right: 27%;
+
+}
+
+#notNumber{
+    position: absolute;
+    background-color: peachpuff;
+    color: rebeccapurple;
+    padding: 16px 32px;
+    right: 42%;
+    top: 10%;
+}
+
+#instructions{
+    position: absolute;
+    font-family: "Book Antiqua";
+    text-align: center;
+    text-shadow: #9EACED;
+    color: darkblue;
+    top: 10%;
+    right: 40%;
+    height: 80px;
+    width: 300px;
+    background-color: plum;
+}
